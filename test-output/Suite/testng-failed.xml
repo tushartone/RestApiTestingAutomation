@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test Jira(failed)">
+    <classes>
+      <class name="com.JIRARestAssuredAPI.AddCommentThroughAPI">
+        <methods>
+          <include name="addCommentToIssue"/>
+          <include name="getProperties"/>
+        </methods>
+      </class> <!-- com.JIRARestAssuredAPI.AddCommentThroughAPI -->
+      <class name="com.JIRARestAssuredAPI.JiraAPI_GetSessionID">
+        <methods>
+          <include name="getData"/>
+          <include name="jiraAPISession"/>
+        </methods>
+      </class> <!-- com.JIRARestAssuredAPI.JiraAPI_GetSessionID -->
+      <class name="com.JIRARestAssuredAPI.CreateJiraThroughAPI">
+        <methods>
+          <include name="newCreateJira"/>
+          <include name="propFiles"/>
+        </methods>
+      </class> <!-- com.JIRARestAssuredAPI.CreateJiraThroughAPI -->
+    </classes>
+  </test> <!-- Test Jira(failed) -->
+</suite> <!-- Failed suite [Suite] -->
